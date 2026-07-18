@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <style>
-        /* التنسيق العام */
-        body { font-family: sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSGuide</title>
 
-        /* الشريط العلوي */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 40px; background-color: #fff; border-bottom: 1px solid #ddd; margin-bottom: 30px; }
-        .logo { display: flex; align-items: center; gap: 10px; font-weight: bold; font-size: 20px; }
-        .logo img { width: 40px; height: 40px; }
-        .header-icons { display: flex; gap: 15px; font-size: 20px; }
+<link rel="stylesheet" href="style.css">
 
-        /* شريط الأدوات */
-        .controls { display: flex; gap: 15px; margin-bottom: 40px; justify-content: center; align-items: center; }
-        input { width: 400px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        button, select { padding: 10px 20px; border: 1px solid #ccc; background: #fff; border-radius: 4px; cursor: pointer; }
-
-        /* الشبكة والبطاقات */
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
-        .card { background-color: #2c2c2c; color: white; padding: 20px; border-radius: 8px; text-align: center; }
-        .card img { width: 60px; height: 60px; background: white; border-radius: 8px; margin-bottom: 10px; }
-        .card h3 { font-size: 14px; margin: 10px 0; }
-        .card p { font-size: 12px; color: #bbb; }
-    </style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">
-        <img src="رابط_صورة_شعارك_هنا" alt="Logo">
-        OSGuide
-    </div>
-    <div class="header-icons">🤖 🌙</div>
+
+<div class="logo">
+<div class="logo-icon">S</div>
+<span>OSGuide</span>
+</div>
+
+<div class="header-icons">
+
+<button id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<button>
+<i class="fa-brands fa-android"></i>
+</button>
+
+</div>
+
 </header>
 
-<div class="controls">
-    <input type="text" placeholder="Search for an illustration...">
-    <select><option>Sort by: Newest</option></select>
-    <button>Filters</button>
-    <button>+</button>
-</div>
+<section class="toolbar">
 
-<div class="grid">
-    <!-- نموذج بطاقة تطبيق -->
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/F-Droid.svg" alt="F-Droid">
-        <h3>F-Droid</h3>
-        <p>متجر تطبيقات مفتوح المصدر.</p>
-    </div>
-</div>
+<input
+type="text"
+placeholder="Search for an illustration...">
+
+<select>
+
+<option>Newest</option>
+<option>Popular</option>
+<option>Oldest</option>
+
+</select>
+
+<button class="filter-btn">
+
+<i class="fa-solid fa-filter"></i>
+
+Filters
+
+</button>
+
+<button class="add-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</section>
+
+<section class="cards">
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
