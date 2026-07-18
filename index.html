@@ -1,28 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>دليلي للتطبيقات المفتوحة</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
-        .app-item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; }
-        h1 { color: #333; }
+        body { font-family: sans-serif; background: #f9f9f9; margin: 0; }
+        header { display: flex; justify-content: space-between; padding: 20px; background: white; border-bottom: 1px solid #ddd; align-items: center; }
+        .controls { display: flex; gap: 10px; padding: 20px; justify-content: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 20px; padding: 20px; }
+        .card { border: 2px solid transparent; padding: 15px; background: white; transition: 0.3s; border-radius: 8px; cursor: pointer; }
+        .card:hover { border-color: #007bff; }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #ddd; }
     </style>
 </head>
 <body>
-    <h1>دليلي للتطبيقات المفتوحة المصدر</h1>
-    <p>هنا أشارك معكم أفضل التطبيقات التي أعتمد عليها:</p>
-
-    <div class="app-item">
-        <h3>اسم التطبيق الأول</h3>
-        <p>وصف قصير للتطبيق وما الذي يميزه.</p>
-        <a href="رابط_التطبيق_هنا">رابط التحميل من F-Droid</a>
+    <header>
+        <div><strong>OSGuide</strong></div>
+        <div>📱 F-Droid | 🌙</div>
+    </header>
+    <div class="controls">
+        <input type="text" placeholder="البحث...">
+        <button>ترتيب</button>
+        <button>+</button>
     </div>
-
-    <div class="app-item">
-        <h3>اسم التطبيق الثاني</h3>
-        <p>وصف قصير للتطبيق الثاني.</p>
-        <a href="رابط_التطبيق_هنا">رابط التحميل من F-Droid</a>
+    <div class="grid">
+        <div class="card">تطبيق 1</div>
+        <div class="card">تطبيق 2</div>
+        <div class="card">تطبيق 3</div>
     </div>
+    <footer>F-Droid is an app catalog for FOSS.</footer>
 </body>
 </html>
